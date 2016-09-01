@@ -4912,6 +4912,18 @@ textarea {
     text-align: center
 }
 
+.round-icon:hover{
+  background-color: #f7cc99;
+}
+
+.hilit a{
+  color:#a2a2a2;
+}
+
+.hilit:hover a{
+  color:#5d5d5d;
+}
+
 .cta-header {
     position: relative;
     margin-top: 3.125rem;
