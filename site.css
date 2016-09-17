@@ -220,10 +220,10 @@ select {
 }
 
 .banner .scroll-down-btn {
+    display: block;
     position: absolute;
     right: 15em;
     bottom: -60%;
-    display: block;
     margin: 1.875rem auto 0;
     padding-top: .3125rem;
     width: 3.5rem;
@@ -3521,7 +3521,7 @@ input[type=text], input[type=email], textarea {
         margin-bottom: 3.75rem
     }
     .banner .scroll-down-btn {
-        display: none;
+        margin-top: 3.75rem
     }
 }
 
