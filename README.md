@@ -9,7 +9,20 @@ I don't use it much but this is my intergalactic garage, I sometimes update it w
 * Images are also saved as such, in the [image](http://devdutt.ga/imgaes) folder.
 
 ## Header
-The code used in the header is basically an image styled to be shaped 'D' and text which are the name with a subscript to the blog and a tag line that points out certain importances.
+The code used in the header is basically an image styled to be shaped 'D' within the linked CSS as:
+
+```css
+.header .logo img{
+  border-radius: 1000px;
+  border-radius: 0 200px 200px 0;
+  -webkit-border-radius: 0 200px 200px 0;
+}
+```
+Then there is the texts:
+1. The name with a subscript to the blog.
+2. Tag-line that points to another website.
+
+**The code used in the header is :**
 
 ```html
 <header class=header>
