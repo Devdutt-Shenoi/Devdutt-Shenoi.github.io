@@ -221,7 +221,7 @@ select {
 
 .banner .scroll-down-btn {
     position: absolute;
-    right: auto;
+    right: initial;
     bottom: -20px;
     display: block;
     margin: 1.875rem auto 0;
