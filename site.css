@@ -187,7 +187,7 @@ select {
 }
 
 .banner {
-    min-height: 84%;
+    min-height: 80%;
     position: relative;
     padding: 2.5rem 0 3.125rem;
     text-align: center;
@@ -220,6 +220,8 @@ select {
 }
 
 .banner .scroll-down-btn {
+    position: absolute;
+    bottom: 5px;
     display: block;
     margin: 1.875rem auto 0;
     padding-top: .3125rem;
