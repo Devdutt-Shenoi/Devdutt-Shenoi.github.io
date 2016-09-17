@@ -187,6 +187,7 @@ select {
 }
 
 .banner {
+    min-height: 90vh;
     position: relative;
     padding: 2.5rem 0 3.125rem;
     text-align: center;
