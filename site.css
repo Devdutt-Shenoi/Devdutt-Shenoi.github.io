@@ -3511,7 +3511,7 @@ input[type=text], input[type=email], textarea {
 
 @media only screen and (min-width:40.063em) {
     .banner {
-        padding: 5.375rem 0 6.25rem
+        padding: 5.375rem 0 16.25rem
     }
     .banner .lead {
         margin-bottom: 3.75rem
