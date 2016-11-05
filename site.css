@@ -3461,7 +3461,7 @@ input[type=text], input[type=email], textarea {
 
 .banner {
     position: relative;
-    padding: 2.5rem 0 3.125rem;
+    padding: 2.5rem 0 16.0rem;
     text-align: center;
     background: rgba(255, 175, 75, 1);
     background: -moz-linear-gradient(left, rgba(255, 175, 75, 1) 29%, rgba(255, 175, 75, .7) 51%, rgba(255, 146, 10, .45) 70%, rgba(255, 146, 10, .42) 72%);
@@ -3493,8 +3493,8 @@ input[type=text], input[type=email], textarea {
 
 .banner .scroll-down-btn {
     display: block;
-    margin: 1.875rem auto 0;
-    padding-top: .3125rem;
+    margin: 1.875rem auto 1.0rem;
+    padding: .3125rem 0 .125rem;
     width: 3.5rem;
     height: 3.5rem;
     font-size: 1.875rem;
@@ -3511,7 +3511,7 @@ input[type=text], input[type=email], textarea {
 
 @media only screen and (min-width:40.063em) {
     .banner {
-        padding: 5.375rem 0 16.25rem
+        padding: 5.375rem 0 16.0rem
     }
     .banner .lead {
         margin-bottom: 3.75rem
@@ -7206,7 +7206,7 @@ input[type=text], input[type=email], textarea {
 
 @media only screen and (min-width:40.063em) {
     .banner {
-        padding: 5.375rem 0 6.25rem
+        padding: 5.375rem 0 16rem
     }
     .banner .lead {
         margin-bottom: 3.75rem
