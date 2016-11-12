@@ -3393,7 +3393,6 @@ input[type=text], input[type=email], textarea {
 
 .header .logo img {
     float: left;
-    margin: 0;
     width: auto;
     height: 2.5rem;
     border-radius: 1000px;
@@ -3418,11 +3417,13 @@ input[type=text], input[type=email], textarea {
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
+    padding-right: 10px;
     color: #384047
 }
 
 .header .tagline {
     float: right;
+    padding-top: 0.7em;
     margin: .8125rem 0;
     font-size: .875rem;
     font-weight: 700;
@@ -3637,29 +3638,6 @@ input[type=text], input[type=email], textarea {
     color: inherit;
 }
 
-footer {
-    padding: 3.125rem 0;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    text-align: center;
-    background-color: #fff
-}
-
-footer p {
-    margin: 0;
-    font-size: .8125rem;
-    line-height: 1
-}
-
-@media only screen and (min-width:40.063em) {
-    footer {
-        padding: 6.25rem 0
-    }
-    footer p {
-        float: left;
-        margin: .375rem 0 0
-    }
-}
-
 .social {
     margin: 0 0 1.875rem;
     padding: 0;
@@ -3687,8 +3665,8 @@ footer p {
         margin: 0
     }
 }
-=======
-body, html {
+
+=======body, html {
     height: 100%;
     font-size: 100%;
     -webkit-transition: box-shadow 3s ease-in-out;
@@ -5780,7 +5758,7 @@ meta.foundation-mq-topbar {
     color: #FFF
 }
 
-.top-bar-section ul li>a.button.secondary {
+.top-bar-section ul>a.button.secondary {
     background-color: #edeff0;
     border-color: #b9c1c5;
     color: #333
@@ -6424,27 +6402,51 @@ meta.foundation-mq-topbar {
 }
 
 @media only screen and (max-width: 950px) {
-    .banner .scroll-down-btn{
-        display:none;
+    .banner .scroll-down-btn {
+        display: none;
         margin: 0;
         padding: 0;
-        right:0;
+        right: 0;
         bottom: 0;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .banner .button{
-      margin: 20px auto 0 auto
+@media only screen and (max-width: 51em) {
+    .banner .button {
+        margin: 20px auto 0 auto
     }
-    .banner{
-      padding: 20px 2px;
+    .banner {
+        padding: 20px 2px;
+        max-height: 100vh;
     }
-
+    .banner:hover {
+        box-shadow: none;
+    }
+    .logo{
+      padding-left: 2.55vw;
+    }
     .tagline {
         display: none;
     }
 }
+
+@media only screen and (max-width: 27.5em) {
+    #title {
+        display: none;
+    }
+    .logo {
+        display: block;
+        max-width: 300px;
+        max-width: 300px;
+        padding-left: 25vw;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .logo img{
+      height:30vh;
+    }
+}
+
 blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
     margin: 0;
     padding: 0
@@ -7224,7 +7226,6 @@ input[type=text], input[type=email], textarea {
     }
 }
 
-
 @media only screen and (min-width:40.063em) {
     .banner {
         padding: 5.375rem 0 16rem
@@ -7358,7 +7359,6 @@ footer {
     padding: 3.125rem 0;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     text-align: center;
-    background-color: #fff
 }
 
 footer p {
@@ -7390,12 +7390,12 @@ footer p {
 .social li a {
     margin: 0 .625rem;
     padding: .625rem 0;
-    color: #8c989e;
+    color: rgba(#b5b5b5, 0.38);
     transition: .35s ease-in-out
 }
 
 .social li a:hover {
-    color: #75848b
+    color: #464646
 }
 
 @media only screen and (min-width:40.063em) {
@@ -7403,4 +7403,9 @@ footer p {
         float: right;
         margin: 0
     }
+}
+
+#title {
+    padding: 0.15em;
+    font-size: 1.9em;
 }
