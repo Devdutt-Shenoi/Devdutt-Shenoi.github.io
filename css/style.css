@@ -862,6 +862,10 @@ ul.legals li:last-child::after {
         margin: 0 auto;
     }
 
+    footer{
+        position: relative;
+    }
+
     .stay #right {
         margin: 0 auto;
     }
