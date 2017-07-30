@@ -682,7 +682,7 @@ Features
     width: 175px;
     line-height: 175px;
     max-width: 100%;
-    background: #ff9933;
+    background: #ff9030;
     border-radius: 50%;
     -o-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -747,6 +747,11 @@ Subscribe
 /* ==========================================================================
 Footer
 ========================================================================== */
+.main{
+    z-index: 100;
+    position: static;
+    padding-bottom: 40px;
+}
 footer a {
     color: #a1a9b0;
 }
@@ -756,6 +761,11 @@ footer a:focus {
     text-decoration: none;
 }
 footer {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
     background-color: #303030;
     padding: 40px 0 30px;
 }
@@ -803,10 +813,16 @@ ul.legals li:last-child::after {
 }
 .stay svg:hover {
     background-color: #303030;
-    fill: #f93;
-    border: 5px dashed rgba(255, 153, 51, 0.8);
 }
 .stay #left svg {
+    height: 80px;
+    position: absolute;
+}
+.stay #left svg:hover {
+    background-color: #303030;
+    fill: #fff;
+    border: 5px dashed rgba(255, 153, 51, 0.8);
+    border-style: none none solid none;
     height: 80px;
     position: absolute;
 }
@@ -826,8 +842,8 @@ ul.legals li:last-child::after {
 .stay #right svg:focus,
 .stay #right svg:visited {
     border: none;
+    fill: #f93;
     border-bottom: 2px solid #f93;
-    fill: rgba(255, 153, 51, 0.5);
 }
 .nav-up {
     top: -40px;
